@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="./handler.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div id="track-container">
+      <div class="track-header">
+        <img src="https://i.imgur.com/zRb8GYl.png" />
+        <span class="tracker-police"><i>LSPD</i></span>
+        <span class="tracker-police-sub">VEHICLE TRACKER</span>
+      </div>
+
+      <div class="tracker-body">
+        <input
+          class="tracker-search-input"
+          placeholder="Enter the vehicle registration number"
+          maxlength="8"
+        />
+
+        <button class="tracker-button-save" type="submit">SEARCH</button>
+        <button class="tracker-button-remove" type="submit">REMOVE</button>
+        <button class="tracker-button-cancel" type="submit">CLOSE</button>
+
+        <span class="tracker-plate-error">INCORRECT PLATE NUMBER !</span>
+        <span class="tracker-plate-search">SEARCHING...</span>
+        <span class="tracker-plate-max">MAX. TRACKERS !</span>
+      </div>
+    </div>
+  </body>
+</html>

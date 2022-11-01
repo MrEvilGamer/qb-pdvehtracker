@@ -1,0 +1,170 @@
+body {
+  background: none !important;
+}
+
+@font-face {
+  font-family: policeFont;
+  src: url(./police.ttf);
+}
+
+#track-container {
+  position: fixed;
+  left: 15%;
+  top: 15%;
+  height: 65%;
+  width: 65%;
+
+  border: rgb(255, 208, 0);
+  border-style: solid;
+  display: none;
+}
+
+.track-header {
+  position: fixed;
+  left: 15.2%;
+  top: 15.3%;
+  height: 14%;
+  border-bottom: 5px solid rgb(255, 208, 0);
+  width: 64.6%;
+  background-color: #12429c;
+}
+
+.tracker-police {
+  position: fixed;
+  left: 22.2%;
+  top: 16%;
+  font-size: 30px;
+  font-family: policeFont;
+  color: rgb(255, 208, 0);
+}
+
+.tracker-police-sub {
+  position: fixed;
+  left: 37%;
+  top: 18%;
+  font-size: 50px;
+  font-family: policeFont;
+  color: rgb(255, 208, 0);
+}
+
+.tracker-body {
+  position: fixed;
+  left: 15.2%;
+  top: 29.1%;
+  height: 50.6%;
+  width: 64.6%;
+  background-color: rgb(78, 132, 247);
+}
+
+.tracker-search-input {
+  position: fixed;
+  left: 30%;
+  top: 45%;
+  height: 5%;
+  width: 35%;
+  background-color: rgb(255, 255, 255);
+  border: gray;
+  border-width: 3px;
+  border-style: inset;
+}
+
+.tracker-button-save {
+  position: fixed;
+  left: 30%;
+  top: 51%;
+  height: 5%;
+  width: 10%;
+  background-color: rgb(0, 81, 255);
+  border: rgb(255, 208, 0);
+  color: rgb(255, 208, 0);
+  font-family: policeFont;
+  font-size: 20px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.tracker-button-remove {
+  position: fixed;
+  left: 41%;
+  top: 51%;
+  height: 5%;
+  width: 10%;
+  background-color: rgb(0, 81, 255);
+  border: rgb(255, 208, 0);
+  color: rgb(255, 208, 0);
+  font-family: policeFont;
+  font-size: 20px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.tracker-button-cancel {
+  position: fixed;
+  left: 54.9%;
+  top: 51%;
+  height: 5%;
+  width: 10%;
+  background-color: rgb(0, 81, 255);
+  border: rgb(255, 208, 0);
+  color: rgb(255, 208, 0);
+  font-family: policeFont;
+  font-size: 20px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.tracker-button-save:hover {
+  border: inset;
+  border-width: 3px;
+  border-color: rgb(255, 208, 0);
+}
+
+.tracker-button-remove:hover {
+  border: inset;
+  border-width: 3px;
+  border-color: rgb(255, 208, 0);
+}
+
+.tracker-button-cancel:hover {
+  border: inset;
+  border-width: 3px;
+  border-color: rgb(255, 208, 0);
+}
+
+.tracker-plate-error {
+  position: fixed;
+  left: 30%;
+  top: 41%;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(223, 0, 0);
+  display: none;
+}
+
+.tracker-plate-search {
+  position: fixed;
+  left: 30%;
+  top: 41%;
+  font-size: 25px;
+  font-family: policeFont;
+  color: rgb(255, 208, 0);
+  display: none;
+}
+
+.tracker-plate-max {
+  position: fixed;
+  left: 30%;
+  top: 41%;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(223, 0, 0);
+  display: none;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
