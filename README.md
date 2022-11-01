@@ -15,6 +15,10 @@ This resource gives your police the ability to track any kind of vehicle given t
 
 **Usage**
 
+Converted to QBCore :)
+
+Credit goes to - https://forum.cfx.re/t/release-esx-police-vehicle-tracker-with-ui/1076814 for making this :)
+
 Get into a vehicle and make sure your job is set to police then open the tracker with F9 (can be changed in the config) and input the license plate then click search. To remove the license plate from the tracker click remove. 
 
 **Showcase**
