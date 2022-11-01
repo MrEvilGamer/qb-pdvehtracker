@@ -127,19 +127,14 @@ end)
 
 function checkVehicle(plate)
     local vehicle = QBCore.Functions.GetVehicles()
-    local trackevehicle = plate
-    if not trackevehicle then
-        for i=1, #vehicle, 1 do 
-            local vehicleProps = QBCore.Functions.GetVehicleProperties(vehicle[i])
-            
-            if vehicleProps.plate == plate then 
-                TriggerServerEvent("qb-pdvehtracker:setActivePlates", plate)
-                time_out[plate] = false
-                createVehicleTracker(vehicle[i], plate) 
-            end 
-        end
-    else
-        QBCore.Functions.Notify('Can not Track the Same Vehicle')
+    for i=1, #vehicle, 1 do 
+        local vehicleProps = QBCore.Functions.GetVehicleProperties(vehicle[i])
+        
+        if vehicleProps.plate == plate then 
+            TriggerServerEvent("qb-pdvehtracker:setActivePlates", plate)
+            time_out[plate] = false
+            createVehicleTracker(vehicle[i], plate) 
+        end 
     end
 end
 
